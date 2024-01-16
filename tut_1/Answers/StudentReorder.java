@@ -1,8 +1,10 @@
 package tut_1.Answers;
 
+import tut_1.List;
+
 public class StudentReorder {
 
-    public static class LinkedList<E> {
+    public static class LinkedList<E> implements List<E> {
         // Node and LinkedList implementation remains the same
         private static class Node<E> {
             E data;
@@ -68,10 +70,12 @@ public class StudentReorder {
         @Override
         public void printList() {
             Node<E> current = head;
+            System.out.print("Jen's truck -> ");
             while (current != null) {
                 System.out.print(current.data + " ");
                 current = current.next;
             }
+            System.out.print("<- Ben's truck");
             System.out.println();
         }
 
