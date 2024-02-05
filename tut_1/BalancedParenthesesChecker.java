@@ -12,9 +12,9 @@ public class BalancedParenthesesChecker {
 
     public static void main(String[] args) {
         // TODO Test your implementation
-        String expression = "((a + b) * c)) - d";
+        String expression = "{(([a + b]) * c) - d}";
         System.out.println("Is the expression balanced? " + isBalanced(expression));
-        expression = "((a + b) * c) - d";
+        expression = "([(a + b) * c)} - d";
         System.out.println("Is the expression balanced? " + isBalanced(expression));
     }
 }
